@@ -4,10 +4,10 @@ public class Greenest {
 
     public static void main(String[] args) {
 
-        Kaktus igge = new Kaktus("Igge", 0.02, "mineral vatten");
-        Köttätande meatloaf = new Köttätande("Meatloaf", 0.7, "protein dryck");
-        Palm laura = new Palm("Laura", 5, "kranvatten");
-        Palm olof = new Palm("Olof", 1, "kranvatten");
+        Kaktus igge = new Kaktus("Igge", 0.02);
+        Köttätande meatloaf = new Köttätande("Meatloaf", 0.7);
+        Palm laura = new Palm("Laura", 5);
+        Palm olof = new Palm("Olof", 1);
 
         Scanner scanner = new Scanner(System.in);
 
