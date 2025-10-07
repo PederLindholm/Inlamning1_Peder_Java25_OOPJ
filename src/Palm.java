@@ -7,7 +7,6 @@ public class Palm extends Plants {
 
     public Palm(String name, double height) {
         super(name, height);
-
     }
 
     public void vattnaVäxt() {

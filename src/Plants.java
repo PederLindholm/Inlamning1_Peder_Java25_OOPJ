@@ -1,5 +1,5 @@
 public class Plants implements VattnaVäxt{
-    //Private variabler då alla subklasser använder sig av super för att skapa och getters för att kom åt dom
+    //Private variabler då alla subklasser använder sig av super för att skapa och getters för att komma åt dom
     private String name;
     private double height;
 
