@@ -1,8 +1,8 @@
 public class Palm extends Plants {
 
+    //Private - Bara Palm klassen som använder dom
     private OperandFörVattning vattning = OperandFörVattning.PALM;
-
-    double mängdVatten = vattning.operandFörVattning * getHeight();
+    private double mängdVatten = vattning.operandFörVattning * getHeight();
 
     public Palm(String name, double height, String typeOfFluid) {
         super(name, height, typeOfFluid);

@@ -1,7 +1,8 @@
 public class Kaktus extends Plants{
 
+    //Private - Bara kaktus klassen som använder dom
     private OperandFörVattning vattning = OperandFörVattning.KAKTUS;
-    double mängdVatten = vattning.operandFörVattning;
+    private double mängdVatten = vattning.operandFörVattning;
 
     public Kaktus(String name, double height, String typeOfFluid) {
         super(name, height, typeOfFluid);

@@ -1,6 +1,6 @@
 public enum OperandFörVattning {
 
-    PALM (0.2),
+    PALM (0.5),
     KAKTUS (2),
     KÖTTÄTANDE (0.1),
     KÖTTÄTANDEEXTRA(0.2);
@@ -9,8 +9,6 @@ public enum OperandFörVattning {
 
     OperandFörVattning(double operandFörVattning) {
         this.operandFörVattning = operandFörVattning;
-
-
     }
 }
 
