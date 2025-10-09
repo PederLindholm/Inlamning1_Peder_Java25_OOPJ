@@ -1,29 +1,44 @@
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Greenest {
 
     public static void main(String[] args) {
 
+
         Plants igge = new Kaktus("Igge", 0.02);
-        Köttätande meatloaf = new Köttätande("Meatloaf", 0.7);
-        Palm laura = new Palm("Laura", 5);
-        Palm olof = new Palm("Olof", 1);
+        Plants meatloaf = new Köttätande("Meatloaf", 0.7);
+        Plants laura = new Palm("Laura", 5);
+        Plants olof = new Palm("Olof", 1);
+        boolean found = false;
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Vilken växt ska få vätska? ");
         String val = scanner.nextLine().toLowerCase();
 
-        if (val.equals(igge.getName().toLowerCase())) {
-            igge.vattnaVäxt();
-        } else if (val.equals(meatloaf.getName().toLowerCase())) {
-            meatloaf.vattnaVäxt();
-        } else if (val.equals(laura.getName().toLowerCase())) {
-            laura.vattnaVäxt();
-        } else if (val.equals(olof.getName().toLowerCase())) {
-            olof.vattnaVäxt();
-        } else {
-            System.out.println("Du har ingen växt som heter " + val);
+        ArrayList<Plants> plantsList = new ArrayList<>();
+
+        plantsList.add(igge);
+        plantsList.add(meatloaf);
+        plantsList.add(laura);
+        plantsList.add(olof);
+
+        for (Plants plants : plantsList){
+            if (val.equalsIgnoreCase(plants.getName())){
+                plants.vattnaVäxt();
+                found = true;
+                break;
+            }
+
         }
+        if (!found){
+            System.out.println("Det finns ingen växt med namnet " + val);
+        }
+
+
+
+
     }
 }
